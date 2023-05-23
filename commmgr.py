@@ -4,7 +4,7 @@ from tkinter import messagebox
 from tkinter import ttk
 
 root = tk.Tk()
-root.title("오늘도 화이팅 💪")
+root.title("오늘도 화이링 💪")
 
 time_label = tk.Label(root, text="")
 time_label.grid(row=0, column=0, sticky='ew')
@@ -77,14 +77,14 @@ def end_work():
     if after_id is not None:
         root.after_cancel(after_id)
         after_id = None
-    messagebox.showinfo("탈 출 🥳", " 수고했어 오늘도 👍 ")
+    messagebox.showinfo("탈 출!!! 🥳", " 수고했어 오늘도 👍 ")
         
 
 
 start_button = tk.Button(root, text="근무 시작", command=start_work)
 start_button.grid(row=4, column=0)
 
-end_button = tk.Button(root, text="탈 출 🥳", command=end_work)
+end_button = tk.Button(root, text="탈 출!!! 🥳", command=end_work)
 end_button.grid(row=5, column=0)
 
 hour_combo.grid(row=1, column=0)
